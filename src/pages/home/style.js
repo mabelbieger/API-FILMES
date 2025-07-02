@@ -7,6 +7,13 @@ export const Container = styled.div`
         text-align: center;
         margin: 4rem 0;
     }
+
+    h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0 0.5rem 0;
+    text-align: center;
+  }
 `;
 
 export const MovieList = styled.ul`
@@ -48,7 +55,44 @@ export const Btn = styled.button`
     color: #212121;
     background-color: #ffffff;
     font-weight: 1000;
-    font-size: 12 px;
+    font-size: 12px;
     cursor: pointer;
     transition: all 250ms;
+`;
+
+export const GenreFilter = styled.div`
+  margin-bottom: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+
+  label {
+    background-color:rgb(237, 218, 255);
+    color: #212121;
+    padding: 0.5rem 1.2rem;
+    border-radius: 10px;
+    border: 1.5px solid #ccc;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+
+    input {
+      margin-right: 0.5rem;
+      cursor: pointer;
+      accent-color: #212121;
+      width: 18px;
+      height: 18px;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      background-color:rgb(174, 130, 255);
+      border-color: #999;
+      box-shadow: 0 4px 10px rgba(33, 1, 75, 0.36);
+    }
+  }
 `;
