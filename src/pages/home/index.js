@@ -42,9 +42,9 @@ function Home() {
 
   return (
     <Container>
-      <h1>Filmes!</h1>
+      <h1>MariFlix</h1>
 
-        <h2>Filtrar categorias:</h2>
+        <h2>Categorias</h2>
       <GenreFilter>
         {genres.map((genre) => (
           <label key={genre.id}>

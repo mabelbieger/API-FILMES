@@ -4,15 +4,24 @@ export const Container = styled.div`
     padding: 2rem;
 
     h1 {
-        text-align: center;
-        margin: 4rem 0;
-    }
+    text-align: center;
+    margin: 4rem 0;
+    font-weight: bold;
+    font-size: 4rem;
+    background: linear-gradient(90deg,rgb(255, 105, 200),rgb(165, 153, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
 
     h2 {
     font-size: 1.5rem;
     font-weight: 700;
     margin: 1rem 0 0.5rem 0;
     text-align: center;
+    color: pink
   }
 `;
 
