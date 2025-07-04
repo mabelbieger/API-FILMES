@@ -49,3 +49,98 @@ nav h1 {
 .descricao p {
   text-indent: 30px;
 }
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.trailer-button {
+    background: purple;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(181, 9, 229, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.trailer-button:hover {
+    background: linear-gradient(45deg, #af08d4, #b209e5);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(229, 9, 20, 0.4);
+}
+
+.trailer-button:active {
+    transform: translateY(0);
+}
+
+.trailer-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.trailer-container iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .action-buttons {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .trailer-button,
+    .link_button {
+        width: 80%;
+        max-width: 300px;
+        justify-content: center;
+    }
+    
+    .trailer-container {
+        margin: 20px auto;
+        width: 95%;
+    }
+    
+    .trailer-container iframe {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .trailer-container {
+        margin: 15px auto;
+        width: 98%;
+    }
+    
+    .trailer-container iframe {
+        height: 200px;
+    }
+    
+    .trailer-button {
+        font-size: 14px;
+        padding: 10px 20px;
+        width: 90%;
+        max-width: 280px;
+    }
+}
